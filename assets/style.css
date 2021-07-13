@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #f3f5f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 30px;
+  margin-top: 20px;
+}
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+header {
+  background: var(--linear);
+}
+.header {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: var(--white);
+}
+
+#pesquisa {
+  margin-top: 4.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  width: 900px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.5;
+  background: var(--white);
+  background-image: url('https://img.icons8.com/ios/50/000000/search--v3.png');
+  background-repeat: no-repeat;
+  background-position: 5px 24px;
+  background-size: 20px;
+}
+
+article {
+  max-width: 900px;
+  margin: 60px auto;
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--title);
+}
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  color: var(--text);
+}
+
+article a p {
+  color: var(--text);
+}
+
+article a h2 {
+  color: var(--title);
+  padding: 10px 0px;
+}
+
+article a h2:hover {
+  color: var(--blue-dark);
+}
